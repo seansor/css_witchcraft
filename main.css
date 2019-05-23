@@ -4,11 +4,12 @@
     left: 0;
     right: 0;
     background-color: #4a4a4f;
+    /*font-size: 0;*/
 }
 
 button {
     border: none;
-    
+    background-clip: padding-box;
     background-color: #0997d3;
     width:150px;
     height: 50px;
@@ -49,8 +50,13 @@ button {
 }
 
 .dropdown {
+    display: inline-block;
     width: 150px;
     position: relative;
+}
+
+.dropdown ~ .dropdown {
+    margin-left: -3px;
 }
 
 .dropdown:hover button {
